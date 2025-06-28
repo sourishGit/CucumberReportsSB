@@ -10,7 +10,7 @@ Feature: Purchase the order from E-commerce website
     Given Logged in with username <username> and password <password>
     When I add product <productName> to cart
     And Checkout <productName> and submit order
-    Then "Thankyou for the order" message is displayed on Confirmation page
+    Then "Thankyou for the order." message is displayed on Confirmation page
 
     Examples: 
       | username  		| password | productName  |
